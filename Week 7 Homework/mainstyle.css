@@ -1,0 +1,19 @@
+.purpleColor{
+    color:mediumpurple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#specificLink{
+    color:red;
+    font-family:arial;
+    font-size:28px;
+}
+#specificColor{
+    color:rgb(20, 55, 170);
+    font-family:arial;
+    font: size 18px;
+    font-weight: bold;
+}
+.body {
+    background-image: url("forest.jpg");
+    background-color: #cccccc;
+   }
