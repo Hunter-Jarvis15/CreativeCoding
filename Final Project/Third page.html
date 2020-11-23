@@ -1,0 +1,51 @@
+<html>
+    <title>My first page</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="mainstyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script>
+            function checkform()
+            {
+                var name;
+                var email;
+                name = document.getElementById("Name").value;
+                if(name == "")
+                {
+                    window.alert("Name is required.")
+                    document.getElementById("Name").style.backgroundColor = "red";
+                    document.getElementById("Name").focus();
+    
+                }
+                else
+                {
+                    document.getElementById("Name").style.backgroundColor = "white";
+                }
+
+                Email = document.getElementById("Email").value;
+                if(Email == "")
+                {
+                    window.alert("Email is required.")
+                    document.getElementById("Email").style.backgroundColor = "red";
+                    document.getElementById("Email").focus();
+               }
+                else
+                {
+                    document.getElementById("Email").style.backgroundColor = "white";
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <h3 id="specificLink">Terms of Service</h3>
+        
+        <table>
+            Name: <input type="text" id="Name"><br>
+            Email: <input type="text" id="Email"><br>
+            <button type="submit" onclick="checkform();">Submit</button>
+        </table>
+        <a href="First Page.html" target="_new" style="text-decoration:none;">Home</a>
+        <a href="Second Page.html" target="_new" style="text-decoration:none;">Short Story</a>
+        <a href="Semester Projects.html" target="_new" style="text-decoration:none;">Projects</a>
+    </body>
+</html>
